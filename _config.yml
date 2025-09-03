@@ -1,12 +1,13 @@
 # Site settings
-title:
-email:
-description: > # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+title: Symprix
+email: info@symprix.com
+description: > 
+Symprix is a strategic advisory practice helping transport, infrastructure, and innovation leaders move from complexity to clarity.
+baseurl: "" 
+url: "https://www.symprix.com"
 
 twitter_username:
-github_username:
+github_username: CD-Symprix
 
 # Build settings
 markdown: kramdown
