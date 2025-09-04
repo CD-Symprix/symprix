@@ -272,11 +272,19 @@ header {
   margin: 10px 0;  // shrink overall block spacing too
 }
 
+.name-row h3 {
+  margin: 0;              // remove extra top/bottom margins
+  line-height: 1.2;       // tighten line spacing
+  font-size: 20px;        // adjust if it looks too large/small
+  display: flex;
+  align-items: center;    // keep vertically centered
+}
 .name-row {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; // Dr. on the left, button on the right
+  align-items: center;            // align vertically in the middle
   width: 100%;
 }
+
 
 
