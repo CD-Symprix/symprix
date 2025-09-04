@@ -42,3 +42,19 @@ $theme-dark: #222;
         "mixins",
         "base"
 ;
+/* === Custom Navbar Styles === */
+.navbar-custom {
+  background: linear-gradient(to right, #8faad2, #7092BE); // lighter left → target blue right
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // subtle separation
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link,
+.navbar-custom .nav > li > a {
+  color: #fff !important; // white text
+}
+
+.navbar-custom .navbar-brand img {
+  filter: brightness(0) invert(1); // optional logo tweak for dark backgrounds
+}
