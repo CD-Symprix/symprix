@@ -116,6 +116,7 @@ $theme-dark: #222;
   flex-direction: column;   // vertical stack
   justify-content: flex-end; // ⬅️ push content to the bottom
   align-items: center;      // center horizontally
+  padding-bottom: 60px;     // ⬅️ keeps text a bit above bottom
 }
 .hero-content::before {
   content: "";
