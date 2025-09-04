@@ -1,13 +1,6 @@
-# Site settings
 title: Symprix
-email: info@symprix.com
-description: > 
-Symprix is a strategic advisory practice helping transport, infrastructure, and innovation leaders move from complexity to clarity.
-baseurl: "" 
+description: Strategic advisory in rail economics and infrastructure investment.
 url: "https://www.symprix.com"
-
-twitter_username:
-github_username: CD-Symprix
-
-# Build settings
-markdown: kramdown
+baseurl: "" # leave this as-is for root domain
+author: Sidi Sun
+email: sidi.sun@symprix.com
