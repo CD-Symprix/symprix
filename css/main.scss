@@ -173,16 +173,17 @@ header {
 
 /* === SERVICES SECTION CUSTOM === */
 .service-box {
-  text-align: left;   // align all text to the left
-  margin-bottom: 40px;
+  text-align: left;   // align everything left
+  margin: 20px auto;
+  max-width: 600px;   // keep text from stretching too wide
+}
 
-  p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-top: 10px;
-  }
+.service-box i {
+  display: block;
+  margin-bottom: 15px;
+  color: #f58663; // brand orange (optional)
 }
 
 .service-item {
-  margin-bottom: 40px; // spacing between rows
+  margin-bottom: 40px;
 }
