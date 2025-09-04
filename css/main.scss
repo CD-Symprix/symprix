@@ -55,6 +55,20 @@ $theme-dark: #222;
   color: #fff !important; // white text
 }
 
-#.navbar-custom .navbar-brand img {
-#  filter: brightness(0) invert(1); // optional logo tweak for dark backgrounds
-# }
+/*
+.navbar-custom .navbar-brand img {
+  filter: brightness(0) invert(1); // optional logo tweak for dark backgrounds
+}
+*/
+
+.navbar-custom {
+  min-height: 70px;
+  padding: 10px 0;
+}
+
+/* Center nav items vertically */
+.navbar-custom .navbar-nav > li > a {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 14px;
+}
