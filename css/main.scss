@@ -170,3 +170,19 @@ header {
   text-align: left;
   margin: 20px auto 0;
 }
+
+/* === SERVICES SECTION CUSTOM === */
+.service-box {
+  text-align: left;   // align all text to the left
+  margin-bottom: 40px;
+
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+}
+
+.service-item {
+  margin-bottom: 40px; // spacing between rows
+}
