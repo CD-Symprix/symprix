@@ -172,6 +172,20 @@ header {
 }
 
 /* === SERVICES SECTION CUSTOM === */
+#services {
+  background-color: #6887B0;
+  color: #fff;  // default text color becomes white
+}
+
+#services h2,
+#services h3 {
+  color: #fff;  // keep titles white
+}
+
+#services p {
+  color: rgba(255, 255, 255, 0.85);  // softer white for body text
+}
+
 .service-box {
   text-align: left;   // align everything left
   margin: 20px auto;
