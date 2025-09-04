@@ -71,17 +71,18 @@ $theme-dark: #222;
 
 .navbar-custom {
   min-height: 60px;
+  max-height: 100px;
   padding: 10px 0;
 }
 
 /* Center nav items vertically */
 .navbar-custom .navbar-nav > li > a {
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 20px;
   font-size: 14px;
 }
 .navbar-custom .navbar-nav {
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 /* === HERO SECTION === */
