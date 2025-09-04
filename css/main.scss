@@ -145,7 +145,22 @@ header {
 /* === What We Do Section === */
 
 #about.bg-primary {
-  background-color: rgba(255, 141, 110, 0.85);   // lighter orange
+  position: relative;
+  background-color: #FF8D6E;
+  overflow: hidden;
+}
+
+#about.bg-primary::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.25);  // black overlay at 25%
+  z-index: 1;
+}
+
+#about .container {
+  position: relative;
+  z-index: 2;  // ensures text is on top
 }
 #about .cta-text {
   font-size: 20px;     // bigger text than default
