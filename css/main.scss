@@ -141,3 +141,15 @@ $theme-dark: #222;
 header {
   background: #6887B0 !important; /* wipes any background-image */
 }
+
+/* === What We Do Section === */
+#about.bg-primary {
+  background-color: #f58663;   // lighter orange
+}
+#about .cta-text {
+  font-size: 18px;     // bigger text than default
+  line-height: 1.6;    // improve readability
+  color: #fff;         // keep it white against orange background
+  max-width: 900px;
+  margin: 20px auto 0;
+}
