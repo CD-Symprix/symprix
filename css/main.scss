@@ -116,7 +116,7 @@ $theme-dark: #222;
   flex-direction: column;   // vertical stack
   justify-content: flex-end; // ⬅️ push content to the bottom
   align-items: center;      // center horizontally
-  padding-bottom: 120px;     // ⬅️ keeps text a bit above bottom
+  padding-bottom: 160px;     // ⬅️ keeps text a bit above bottom
 }
 .hero-content::before {
   content: "";
@@ -143,13 +143,15 @@ header {
 }
 
 /* === What We Do Section === */
+
 #about.bg-primary {
-  background-color: #FF9D6D;   // lighter orange
+  background-color: #FF8D6E;   // lighter orange
 }
 #about .cta-text {
-  font-size: 18px;     // bigger text than default
+  font-size: 20px;     // bigger text than default
   line-height: 1.6;    // improve readability
   color: #fff;         // keep it white against orange background
   max-width: 900px;
+  text-align: left;
   margin: 20px auto 0;
 }
