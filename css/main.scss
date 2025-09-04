@@ -80,3 +80,39 @@ $theme-dark: #222;
   padding-bottom: 25px;
   font-size: 15px;
 }
+
+/* === HERO SECTION === */
+.masthead {
+  background-color: #6887B0; // neutral background
+  padding: 100px 0;
+}
+
+.hero-wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-content {
+  background-image: url('../img/header.jpg'); 
+  background-size: cover;
+  background-position: center;
+  padding: 80px 40px;
+  border-radius: 6px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.hero-subtitle {
+  text-align: left;
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+  color: white;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
