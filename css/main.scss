@@ -201,3 +201,27 @@ header {
 .service-item {
   margin-bottom: 40px;
 }
+
+/* === Portfolio SECTION CUSTOM === */
+.project-category {
+  font-size: 16px;      // larger than project-name
+  font-weight: 700;     // bold
+  text-align: center;     // left align
+  margin-bottom: 8px;   // add spacing before project-name
+}
+
+.project-name {
+  font-size: 14px;      // smaller details
+  font-weight: normal;  // reset
+  line-height: 1.6;
+  text-align: left;
+}
+
+.project-name b {
+  font-weight: 600;     // bold specific words only
+}
+
+.project-name u {
+  text-decoration: underline;
+}
+
