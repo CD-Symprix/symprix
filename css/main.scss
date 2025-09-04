@@ -263,24 +263,23 @@ header {
 
 .name-row {
   display: flex;
-  justify-content: space-between;  /* Dr. Sidi Sun left, button right */
-  align-items: center;             /* keep them vertically aligned */
+  justify-content: space-between;   /* text on left, button on right */
+  align-items: center;
   width: 100%;
 }
 
 .name-row h3 {
-  margin: 0;                       /* remove default margins */
-  font-size: 22px;                  /* adjust size */
-  font-weight: 600;                 /* keep it neat but bold */
-  line-height: 1.2;                 /* avoid text wrapping */
-  white-space: nowrap;              /* keep "Dr. Sidi Sun" on one line */
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  white-space: nowrap;              /* keep name on one line */
 }
 
 .name-line {
   border: 0;
   border-top: 2px solid #fff;
-  margin: 6px 0;                   /* bring line closer to text */
-  width: 100%;                     /* make line span across */
+  margin-top: 4px;                 /* small gap below the name row */
+  width: 100%;                     /* line spans across full row (name to button) */
 }
 
 
