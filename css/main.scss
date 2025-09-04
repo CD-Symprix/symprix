@@ -52,14 +52,14 @@ $theme-dark: #222;
 .navbar-custom .navbar-brand,
 .navbar-custom .nav-link,
 .navbar-custom .nav > li > a {
-  color: #fff !important; // white text
+  color: #000 !important; // black text
 }
 .navbar-custom .navbar-brand {
   display: flex;
   align-items: center;
   height: 100%;
   padding: 0;
-  margin-right: 10px; // optional spacing between logo and nav links
+  margin-right: 20px; // optional spacing between logo and nav links
 }
 
 
@@ -76,7 +76,7 @@ $theme-dark: #222;
 
 /* Center nav items vertically */
 .navbar-custom .navbar-nav > li > a {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   font-size: 15px;
 }
