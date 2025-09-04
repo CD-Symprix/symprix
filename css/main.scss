@@ -59,7 +59,7 @@ $theme-dark: #222;
   align-items: center;
   height: 100%;
   padding: 0;
-  margin-right: 20px; // optional spacing between logo and nav links
+  margin-right: 10px; // optional spacing between logo and nav links
 }
 
 
@@ -70,7 +70,7 @@ $theme-dark: #222;
 */
 
 .navbar-custom {
-  min-height: 70px;
+  min-height: 60px;
   padding: 10px 0;
 }
 
@@ -78,5 +78,5 @@ $theme-dark: #222;
 .navbar-custom .navbar-nav > li > a {
   padding-top: 20px;
   padding-bottom: 20px;
-  font-size: 14px;
+  font-size: 15px;
 }
