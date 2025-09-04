@@ -54,6 +54,14 @@ $theme-dark: #222;
 .navbar-custom .nav > li > a {
   color: #fff !important; // white text
 }
+.navbar-custom .navbar-brand {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+  margin-right: 20px; // optional spacing between logo and nav links
+}
+
 
 /*
 .navbar-custom .navbar-brand img {
