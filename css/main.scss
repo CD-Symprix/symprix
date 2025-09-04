@@ -55,6 +55,6 @@ $theme-dark: #222;
   color: #fff !important; // white text
 }
 
-.navbar-custom .navbar-brand img {
-  filter: brightness(0) invert(1); // optional logo tweak for dark backgrounds
-}
+#.navbar-custom .navbar-brand img {
+#  filter: brightness(0) invert(1); // optional logo tweak for dark backgrounds
+# }
