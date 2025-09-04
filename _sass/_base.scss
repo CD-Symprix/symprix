@@ -155,7 +155,7 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background-color: #6887B0;  // your chosen solid color
     text-align: center;
     color: white;
     .header-content {
