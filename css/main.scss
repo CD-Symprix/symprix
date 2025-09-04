@@ -105,7 +105,7 @@ $theme-dark: #222;
   background-image: url('../img/header.jpg'); 
   background-size: cover;
   background-position: center;
-  min-height: 80vh;   // make the picture taller (80% of screen height)
+  min-height: 100vh;   // make the picture taller (100% of screen height)
   padding: 60px 40px; // less padding so text doesn’t crowd top/bottom
   border-radius: 8px;
   color: white;
