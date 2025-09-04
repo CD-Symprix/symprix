@@ -249,13 +249,18 @@ header {
                 @include sans-serif-font;
                 padding: 0 15px;
             }
-            .project-category {
-                text-transform: uppercase;
-                font-weight: 600;
-                font-size: 14px;
+            project-category {
+              font-size: 18px !important;   // make bigger than project-name
+              font-weight: 700;
+              text-align: center;
+              margin-bottom: 10px;
             }
+            
             .project-name {
-                font-size: 18px;
+              font-size: 14px !important;   // force smaller
+              font-weight: normal;
+              line-height: 1.6;
+              text-align: left;
             }
         }
     }
