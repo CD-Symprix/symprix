@@ -260,18 +260,20 @@ header {
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.85);
 }
+
 .name-block {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;   // spacing between text and lines
-  font-weight: 700;
-  position: relative;
+  margin: 20px 0;
 }
 
-.name-block .line {
-  flex: 1;
-  height: 2px;
-  background-color: rgba(255, 255, 255, 0.6); // subtle white line
+.name-line {
+  border: 0;
+  border-top: 2px solid rgba(255, 255, 255, 0.6); // subtle white line
+  margin: 10px 0;
+}
+
+.name-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
