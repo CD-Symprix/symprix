@@ -92,8 +92,9 @@ $theme-dark: #222;
 
 .masthead {
   background-color: #6887B0; // neutral background
-  min-height: 80vh;
-  padding: 100px 0;
+  min-height: auto;  
+  display: flex;
+  justify-content: center;
 }
 
 .hero-wrapper {
