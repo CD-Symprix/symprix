@@ -261,25 +261,4 @@ header {
   color: rgba(255, 255, 255, 0.85);
 }
 
-.name-row {
-  display: flex;
-  justify-content: space-between;   /* text on left, button on right */
-  align-items: center;
-  width: 100%;
-}
-
-.name-row h3 {
-  margin: 0;
-  font-size: 22px;
-  font-weight: 600;
-  white-space: nowrap;              /* keep name on one line */
-}
-
-.name-line {
-  border: 0;
-  border-top: 2px solid #fff;
-  margin-top: 4px;                 /* small gap below the name row */
-  width: 100%;                     /* line spans across full row (name to button) */
-}
-
 
