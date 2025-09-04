@@ -229,3 +229,35 @@ header {
 .portfolio-box-caption {
   background: rgba(245, 134, 99, 0.85) !important;  // darker orange, 85% opacity
 }
+
+/* === TEAM SECTION CUSTOM === */
+
+.bg-darkblue {
+  background-color: #6887B0; // same as services section blue
+  padding: 80px 0;
+  color: #fff;
+}
+
+#team h2.section-heading {
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+#team h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#team .btn-link {
+  padding: 0;
+  font-size: 18px;
+  color:#fff;  
+}
+
+#team .collapse p {
+  margin-top: 15px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+}
+
