@@ -42,7 +42,7 @@ $theme-dark: #222;
         "mixins",
         "base"
 ;
-/* === Custom Navbar Styles === */
+/* ============================================================== Custom Navbar Styles ================================================================= */
 .navbar-custom {
   background: linear-gradient(to right, #8faad2, #7092BE); // lighter left → target blue right
   border: none;
@@ -78,7 +78,7 @@ $theme-dark: #222;
   margin-right: 40px;
 }
 
-/* === HEADER SECTION === */
+/* =========================================================================== HEADER SECTION ========================================================================== */
 .brand-highlight {
   font-weight: 700;
 }
@@ -155,7 +155,7 @@ header {
   background: #6887B0 !important; /* wipes any background-image */
 }
 
-/* === What We Do Section === */
+/* ========================================================================== What We Do Section ========================================================================== */
 
 #about.bg-primary {
   position: relative;
@@ -184,7 +184,7 @@ header {
   margin: 20px auto 0;
 }
 
-/* === SERVICES SECTION CUSTOM === */
+/* ========================================================================== SERVICES SECTION CUSTOM ========================================================================== */
 #services {
   background-color: #6887B0;
   color: #fff;  // default text color becomes white
@@ -216,16 +216,40 @@ header {
   margin-bottom: 40px;
 }
 
-/* === Portfolio SECTION CUSTOM === */
+/* ========================================================================== Portfolio SECTION CUSTOM ========================================================================== */
+
+#portfolio {
+  background-color: #6887B0; /* same dark blue */
+  padding: 80px 0;
+}
+
+#portfolio .section-heading {
+  color: white;
+}
+#portfolio hr.primary {
+  border-color: white;
+}
+#portfolio .row.no-gutter [class*='col-'] {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.portfolio-box-caption-content {
+  position: absolute;
+  top: 20px;   /* move higher */
+  left: 20px;
+  right: 20px;
+  text-align: left; /* or center if you prefer */
+}
 .project-category {
   font-size: 24px;      // larger than project-name
   font-weight: 700;     // bold
   text-align: center;     // left align
-  margin-bottom: 8px;   // add spacing before project-name
+  margin-bottom: 15px;   // add spacing before project-name
 }
 
 .project-name {
-  font-size: 16px;      // smaller details
+  font-size: 15px;      // smaller details
   font-weight: normal;  // reset
   line-height: 1.6;
   text-align: left;
