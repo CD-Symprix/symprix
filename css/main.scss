@@ -259,5 +259,10 @@ header {
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.85);
 }
-
+.name-line {
+  border: 0;
+  border-top: 2px solid #fff;  /* white line */
+  margin-top: 4px;             /* closer to the name */
+  width: 100%;                 /* span full width of col-md-8 */
+}
 
