@@ -249,8 +249,10 @@ header {
 
 #team .btn-link {
   padding: 0;
-  font-size: 18px;
-  color:#fff;  
+  margin-left: 10px;       // spacing from text
+  color: white;
+  vertical-align: middle;  // aligns button to text baseline
+  transform: translateY(2px); // nudge downward a bit
 }
 
 #team .collapse p {
@@ -303,7 +305,12 @@ header {
     background: rgba(0, 0, 0, 0.3); /* darken effect */
     z-index: 1;
   }
-
+        
+  #contact h2.section-heading {
+    color: white !important;
+    font-weight: 700;
+  }
+        
   .container {
     position: relative;
     z-index: 2; /* keep content above overlay */
