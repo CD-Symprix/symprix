@@ -266,7 +266,7 @@ header {
   background: rgba(245, 134, 99, 0.85) !important;  // darker orange, 85% opacity
 }
 
-/* === TEAM SECTION CUSTOM === */
+/* ========================================================================== TEAM SECTION CUSTOM ========================================================================== */
 
 .bg-darkblue {
   background-color: #7092BE; // same as services section blue
@@ -326,7 +326,27 @@ header {
   margin-bottom: 20px;              // spacing before bio text
 }
 
-/* === Contact Styles === */
+@media (max-width: 768px) {
+  .team-photo {
+    max-width: 180px;          /* smaller photo on mobile */
+    margin: 0 auto 20px auto;  /* center with spacing */
+    display: block;
+  }
+
+  .team-text {
+    text-align: center;  /* center text under photo */
+  }
+
+  .team-text h3 {
+    font-size: 1.4rem;
+  }
+
+  .team-text p {
+    font-size: 0.95rem;
+  }
+}
+
+/* ========================================================================== Contact Styles ========================================================================== */
 
 #contact .section-heading {
   color: white !important;
