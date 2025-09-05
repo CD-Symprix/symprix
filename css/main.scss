@@ -223,16 +223,24 @@ header {
   padding: 60px 0;
 }
 
-/* Reduce spacing between images */
+/* Remove container padding for portfolio */
+#portfolio .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Tighten rows */
 #portfolio .row {
   margin-left: -5px;
   margin-right: -5px;
 }
+
+/* Columns */
 #portfolio .col-lg-6, 
 #portfolio .col-sm-6 {
   padding-left: 5px;
   padding-right: 5px;
-  margin-bottom: 10px; // small vertical gap
+  margin-bottom: 10px; // vertical gap
 }
 
 #portfolio .section-heading {
