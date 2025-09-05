@@ -291,6 +291,10 @@ header {
 
 /* === Contact Styles === */
 
+#contact .section-heading {
+  color: white !important;
+  font-weight: 700;
+}
 .contact-section {
   position: relative;
   background: #f58663; /* base orange */
@@ -305,20 +309,10 @@ header {
     background: rgba(0, 0, 0, 0.3); /* darken effect */
     z-index: 1;
   }
-        
-  #contact h2.section-heading {
-    color: white !important;
-    font-weight: 700;
-  }
-        
+                
   .container {
     position: relative;
     z-index: 2; /* keep content above overlay */
-  }
-
-  .contact-title {
-    font-weight: 700; /* bold title */
-    color: #fff; /* white font */
   }
 
   .contact-info {
