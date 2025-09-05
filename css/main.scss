@@ -269,20 +269,50 @@ header {
 /* === Contact Styles === */
 
 .contact-section {
-  background-color: #f58663;   /* dark orange like "What we do" */
-  padding: 80px 0;            /* top/bottom spacing */
+  position: relative;
+  background: #f58663; /* base orange */
+  padding: 30px 0;
+
+  /* overlay layer for darker effect */
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* darken effect */
+    z-index: 1;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2; /* keep content above overlay */
+  }
+
+  .contact-title {
+    font-weight: 700; /* bold title */
+    color: #fff; /* white font */
+  }
 
   .contact-info {
     margin-top: 30px;
 
     i {
       margin-bottom: 10px;
+      color: #fff;
     }
 
-    p {
+    p, .contact-email {
       margin: 0;
       font-size: 16px;
       line-height: 1.6;
+      color: #fff;
+    }
+
+    .contact-email {
+      text-decoration: none;
+    }
+    .contact-email:hover {
+      text-decoration: underline;
     }
   }
 }
