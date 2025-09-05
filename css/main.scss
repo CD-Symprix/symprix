@@ -346,20 +346,6 @@ header {
   margin-bottom: 20px;              // spacing before bio text
 }
 
-/* Reduce photo size on small screens */
-@media (max-width: 767px) {
-  .team-photo {
-    max-width: 180px;
-    margin: 0 auto;
-  }
-  #team .name-row {
-    justify-content: center; /* center name + button under photo */
-  }
-  #team .name-line {
-    max-width: 200px; /* shorter line under name */
-    margin: 10px auto;
-  }
-}
 /* ========================================================================== Contact Styles ========================================================================== */
 
 #contact .section-heading {
