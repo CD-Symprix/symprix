@@ -176,14 +176,6 @@ header {
   background-color: #6887B0;
   color: #fff;  // default text color becomes white
 }
-#service::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.25);  // black overlay at 25%
-  z-index: 1;
-}
-
 #services h2,
 #services h3 {
   color: #fff;  // keep titles white
@@ -240,17 +232,11 @@ header {
 /* === TEAM SECTION CUSTOM === */
 
 .bg-darkblue {
-  background-color: #FF8D6E; // same as services section blue
+  background-color: #7092BE; // same as services section blue
   padding: 80px 0;
   color: #fff;
 }
-#team.bg-darkblue::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.25);  // black overlay at 25%
-  z-index: 1;
-}
+
 #team h2.section-heading {
   margin-bottom: 40px;
   font-weight: 700;
