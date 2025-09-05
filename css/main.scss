@@ -62,13 +62,6 @@ $theme-dark: #222;
   margin-right: 20px; // optional spacing between logo and nav links
 }
 
-
-/*
-.navbar-custom .navbar-brand img {
-  filter: brightness(0) invert(1); // optional logo tweak for dark backgrounds
-}
-*/
-
 .navbar-custom {
   min-height: 60px;
   max-height: 100px;
@@ -116,7 +109,7 @@ $theme-dark: #222;
   flex-direction: column;   // vertical stack
   justify-content: flex-end; // ⬅️ push content to the bottom
   align-items: center;      // center horizontally
-  padding-bottom: 160px;     // ⬅️ keeps text a bit above bottom
+  padding-bottom: 80px;     // ⬅️ keeps text a bit above bottom
 }
 .hero-content::before {
   content: "";
