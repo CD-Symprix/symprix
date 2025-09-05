@@ -266,6 +266,15 @@ header {
   width: 100%;                 /* span full width of col-md-8 */
 }
 
+.name-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid white;   // line goes across
+  padding-bottom: 5px;              // some spacing
+  margin-bottom: 20px;              // spacing before bio text
+}
+
 /* === Contact Styles === */
 
 .contact-section {
