@@ -226,6 +226,13 @@ header {
 #services {
   padding: 40px 0;   // reduce section height
 }
+#services .service-box i {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 3.5rem;   /* adjust size */
+  color: #f58663;      /* your orange */
+}
+
 .service-box {
   text-align: left;   // align everything left
   margin: 20px auto;
@@ -241,7 +248,12 @@ header {
 .service-item {
   margin-bottom: 40px;
 }
-
+#services .service-box i {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 3.5rem;   /* adjust size */
+  color: #f58663;      /* your orange */
+}
 
 /* ========================================================================== Portfolio SECTION CUSTOM ========================================================================== */
 
@@ -276,10 +288,6 @@ header {
 #portfolio hr.primary {
   border-color: white;
 }
-#portfolio .row.no-gutter [class*='col-'] {
-  padding: 0 !important;
-  margin: 0 !important;
-}
 /* Portfolio specific fix */
 #portfolio .container-fluid {
   padding-left: 0;
@@ -288,14 +296,13 @@ header {
 }
 /*Fix Bootstrap row gutter issue */
 #portfolio .row.no-gutter {
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: -5px;
+  margin-right: -5px;
 }
-
 #portfolio .row.no-gutter > [class*='col-'] {
-  padding-left: 5px;   /* small gap between images */
+  padding-left: 5px;
   padding-right: 5px;
-  margin-bottom: 10px; /* vertical spacing */
+  margin-bottom: 10px;
 }
 
 .portfolio-box-caption-content {
