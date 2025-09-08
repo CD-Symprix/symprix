@@ -454,6 +454,36 @@ header {
   }
 }
 
+/* ========================================================================== */
+/* Team Section Mobile Adjustments */
+/* ========================================================================== */
+@media (max-width: 992px) {
+  #team .row {
+    flex-direction: column;      /* stack vertically */
+    align-items: center;         /* center contents horizontally */
+  }
+
+  #team img {
+    margin: 0 auto 20px auto;    /* center photo with margin below */
+    max-width: 200px;            /* slightly smaller on mobile */
+  }
+
+  #team .col-md-8 {
+    text-align: center;          /* center name + bio under photo */
+  }
+
+  #team .collapse p {
+    text-align: left;            /* keep bio text aligned left for readability */
+    margin-top: 15px;
+  }
+
+  #team .name-row {
+    justify-content: center;     /* center name + toggle button */
+    border-bottom: 2px solid white;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+  }
+}
 
 
 
