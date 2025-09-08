@@ -389,56 +389,38 @@ header {
   font-weight: 700;
 }
 
-.contact-info {
-  margin-top: 30px;
+/* Row of contact items */
+.contact-row {
+  margin-top: 20px;
 }
 
-.contact-info i {
+.contact-item {
+  margin-bottom: 15px;
+}
+
+.contact-item i {
+  display: block;
   margin-bottom: 10px;
   color: #fff;
 }
 
-.contact-info p,
-.contact-info .contact-email {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.6;
+.contact-item p,
+.contact-item a {
   color: #fff;
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.6;
 }
 
-.contact-email {
+.contact-item a {
   text-decoration: none;
 }
-.contact-email:hover {
+
+.contact-item a:hover {
+  color: #0A66C2; /* LinkedIn blue hover */
   text-decoration: underline;
 }
 
-/* LinkedIn icon styling */
-.contact-right {
-  text-align: left; /* Keep aligned with email */
-}
-
-.contact-inline {
-  display: flex;
-  align-items: center;
-  gap: 15px; /* space between email and LinkedIn */
-}
-
-.linkedin-link {
-  text-align: center;
-  color: #fff;
-  transition: color 0.3s ease;
-}
-
-.linkedin-link:hover {
-  color: #0A66C2; /* LinkedIn blue */
-}
-
-.linkedin-text {
-  font-size: 14px;
-  margin-top: 2px;
-  color: #fff;
-}
 
 /* ========================================================================== */
 /* Portfolio Mobile Adjustments (phones + tablets <= 992px) */
