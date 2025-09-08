@@ -422,9 +422,9 @@ header {
   #portfolio .portfolio-box-caption .project-category {
             font-size: 18px;
   }
-  body {
-    background-color: red !important;
-  }      
+  header.masthead {
+    background: red !important;
+  }    
   /* Make images taller on mobile */
   #portfolio .portfolio-box img {
     height: 250px;           /* adjust as needed */
