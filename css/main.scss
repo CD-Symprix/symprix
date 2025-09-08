@@ -413,6 +413,16 @@ header {
   text-decoration: underline;
 }
 
+/* LinkedIn icon styling */
+.social-links a {
+  color: #fff;               /* white icon */
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #0A66C2;            /* LinkedIn blue on hover */
+}
 
 /* ========================================================================== */
 /* Portfolio Mobile Adjustments (phones + tablets <= 992px) */
