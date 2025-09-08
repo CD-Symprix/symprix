@@ -414,13 +414,30 @@ header {
 }
 
 /* LinkedIn icon styling */
+.contact-right {
+  text-align: left; /* Keep aligned with email */
+}
+
+.contact-inline {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* space between email and LinkedIn */
+}
+
 .linkedin-link {
-  color: #fff;               /* white icon */
+  text-align: center;
+  color: #fff;
   transition: color 0.3s ease;
 }
 
 .linkedin-link:hover {
-  color: #0A66C2;            /* LinkedIn blue on hover */
+  color: #0A66C2; /* LinkedIn blue */
+}
+
+.linkedin-text {
+  font-size: 14px;
+  margin-top: 2px;
+  color: #fff;
 }
 
 /* ========================================================================== */
