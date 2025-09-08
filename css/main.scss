@@ -305,14 +305,17 @@ header {
 @media (max-width: 768px) {
   .portfolio-box-caption-content {
     font-size: 13px;        /* smaller font */
-    padding: 10px;          /* tighter spacing */
+    padding: 5px 8px;         /* tighter spacing */
   }
   .project-category {
     font-size: 18px;        /* smaller */
+    text-align: left;     /* also left align category */
+    margin-bottom: 8px;
   }
   .project-name {
     font-size: 13px;        /* shrink details */
     line-height: 1.4;
+    text-align: left;
   }
 }
 
