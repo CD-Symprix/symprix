@@ -421,34 +421,35 @@ header {
 
   /* Make portfolio images slightly taller */
   #portfolio .portfolio-box img {
-    height: 250px;       /* adjust this value as needed */
-    object-fit: cover;   /* crop image instead of squishing */
+    height: auto;          /* let browser handle height */
+    min-height: 300px;     /* ensure they’re not too short */
     width: 100%;
+    object-fit: cover;     /* crop nicely */
   }
 
   /* Caption container */
   #portfolio .portfolio-box-caption-content {
-    padding: 10px;       /* tighter padding on mobile */
+    padding: 8px;       /* tighter padding on mobile */
   }
 
   /* Category (top line in overlay) */
   #portfolio .portfolio-box-caption .project-category {
-    font-size: 18px;     
+    font-size: 18px !important;     
     font-weight: 700;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     text-align: left;    /* left align on mobile */
   }
 
   /* Project details (second line in overlay) */
   #portfolio .project-name {
-    font-size: 13px;
+    font-size: 13px !important;
     line-height: 1.4;
     text-align: left;    /* left align for readability */
   }
 
   /* Reduce overlay margins so text is closer to edges */
   #portfolio .portfolio-box-caption {
-    padding-left: 8px;
+    padding-left: 6px;
     padding-right: 8px;
   }
 }
