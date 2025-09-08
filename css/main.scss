@@ -415,39 +415,38 @@ header {
 
 
 /* ========================================================================== */
-/* Portfolio Mobile Adjustments */
+/* Portfolio Mobile Adjustments (phones + tablets <= 992px) */
 /* ========================================================================== */
-@media (max-device-width: 992px) {
+@media (max-width: 992px) {
 
-  #portfolio .portfolio-box-caption .project-category {
-            font-size: 18px;
-  }
-  header.masthead {
-    background: red !important;
-  }    
-  /* Make images taller on mobile */
+  /* Make portfolio images slightly taller */
   #portfolio .portfolio-box img {
-    height: 250px;           /* adjust as needed */
-    object-fit: cover;       /* crop nicely */
+    height: 250px;       /* adjust this value as needed */
+    object-fit: cover;   /* crop image instead of squishing */
     width: 100%;
   }
 
-  /* Adjust caption text */
+  /* Caption container */
   #portfolio .portfolio-box-caption-content {
-    padding: 10px;           /* tighter padding */
+    padding: 10px;       /* tighter padding on mobile */
   }
 
-  #portfolio .project-name {
-    font-size: 13px;         /* smaller text */
-    line-height: 1.4;
-  }
-
-  #portfolio .project-category {
-    font-size: 18px;         /* keep it bigger than project-name */
+  /* Category (top line in overlay) */
+  #portfolio .portfolio-box-caption .project-category {
+    font-size: 18px;     
+    font-weight: 700;
     margin-bottom: 8px;
+    text-align: left;    /* left align on mobile */
   }
 
-  /* Reduce horizontal margins so text is closer to edges */
+  /* Project details (second line in overlay) */
+  #portfolio .project-name {
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: left;    /* left align for readability */
+  }
+
+  /* Reduce overlay margins so text is closer to edges */
   #portfolio .portfolio-box-caption {
     padding-left: 8px;
     padding-right: 8px;
