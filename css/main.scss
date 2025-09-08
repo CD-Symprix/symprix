@@ -302,6 +302,20 @@ header {
   background: rgba(245, 134, 99, 0.85) !important; /* darker orange */
 }
 
+@media (max-width: 768px) {
+  .portfolio-box-caption-content {
+    font-size: 13px;        /* smaller font */
+    padding: 10px;          /* tighter spacing */
+  }
+  .project-category {
+    font-size: 18px;        /* smaller */
+  }
+  .project-name {
+    font-size: 13px;        /* shrink details */
+    line-height: 1.4;
+  }
+}
+
 /* ========================================================================== TEAM SECTION CUSTOM ========================================================================== */
 .bg-darkblue {
   background-color: #7092BE; /* same as services section blue */
