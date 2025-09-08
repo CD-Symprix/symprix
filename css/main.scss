@@ -303,6 +303,12 @@ header {
 }
 
 @media (max-width: 768px) {
+  /* Make all project images taller */
+  #portfolio .portfolio-box img {
+    height: 120% !important;   /* 20% taller */
+    object-fit: cover;         /* ensures no distortion */
+  }
+        
   .portfolio-box-caption-content {
     font-size: 13px;        /* smaller font */
     padding: 5px 8px;         /* tighter spacing */
