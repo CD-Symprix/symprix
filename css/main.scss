@@ -414,13 +414,12 @@ header {
 }
 
 /* LinkedIn icon styling */
-.social-links a {
+.linkedin-link {
   color: #fff;               /* white icon */
-  margin: 0 10px;
   transition: color 0.3s ease;
 }
 
-.social-links a:hover {
+.linkedin-link:hover {
   color: #0A66C2;            /* LinkedIn blue on hover */
 }
 
