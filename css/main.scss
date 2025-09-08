@@ -42,12 +42,12 @@ $theme-dark: #222;
         "mixins",
         "base"
 ;
-
+/*
 html, body {
   width: 100%;
   overflow-x: hidden; /* prevent horizontal scrolling */
 }
-
+*/
 /* ============================================================== Custom Navbar Styles ================================================================= */
 .navbar-custom {
   background: linear-gradient(to right, #8faad2, #7092BE); // lighter left → target blue right
@@ -459,18 +459,3 @@ Fix Bootstrap row gutter issue
   }
 }
 
-/******************************** Ensure Font Awesome icons always display ***********************************/
-i.fa,
-i.fas,
-i.far,
-i.fal,
-i.fab,
-i.fa-solid {
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-  overflow: visible;   /* prevent being hidden by overflow */
-  max-width: none;     /* undo the max-width we added globally */
-}
