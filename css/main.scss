@@ -302,28 +302,6 @@ header {
   background: rgba(245, 134, 99, 0.85) !important; /* darker orange */
 }
 
-@media (max-width: 768px) {
-  /* Make all project images taller */
-  #portfolio .portfolio-box img {
-    height: 120% !important;   /* 20% taller */
-    object-fit: cover;         /* ensures no distortion */
-  }
-        
-  .portfolio-box-caption-content {
-    font-size: 13px;        /* smaller font */
-    padding: 5px 8px;         /* tighter spacing */
-  }
-  .project-category {
-    font-size: 18px;        /* smaller */
-    text-align: left;     /* also left align category */
-    margin-bottom: 8px;
-  }
-  .project-name {
-    font-size: 13px;        /* shrink details */
-    line-height: 1.4;
-    text-align: left;
-  }
-}
 
 /* ========================================================================== TEAM SECTION CUSTOM ========================================================================== */
 .bg-darkblue {
@@ -434,6 +412,42 @@ header {
 .contact-email:hover {
   text-decoration: underline;
 }
+
+
+/* ========================================================================== */
+/* Portfolio Mobile Adjustments */
+/* ========================================================================== */
+@media (max-width: 768px) {
+
+  /* Make images taller on mobile */
+  #portfolio .portfolio-box img {
+    height: 250px;           /* adjust as needed */
+    object-fit: cover;       /* crop nicely */
+    width: 100%;
+  }
+
+  /* Adjust caption text */
+  #portfolio .portfolio-box-caption-content {
+    padding: 10px;           /* tighter padding */
+  }
+
+  #portfolio .project-name {
+    font-size: 13px;         /* smaller text */
+    line-height: 1.4;
+  }
+
+  #portfolio .project-category {
+    font-size: 18px;         /* keep it bigger than project-name */
+    margin-bottom: 8px;
+  }
+
+  /* Reduce horizontal margins so text is closer to edges */
+  #portfolio .portfolio-box-caption {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
 
 
 
