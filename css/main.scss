@@ -42,12 +42,7 @@ $theme-dark: #222;
         "mixins",
         "base"
 ;
-/*
-html, body {
-  width: 100%;
-  overflow-x: hidden; /* prevent horizontal scrolling */
-}
-*/
+
 /* ============================================================== Custom Navbar Styles ================================================================= */
 .navbar-custom {
   background: linear-gradient(to right, #8faad2, #7092BE); // lighter left → target blue right
@@ -213,73 +208,58 @@ header {
 /* ========================================================================== SERVICES SECTION CUSTOM ========================================================================== */
 #services {
   background-color: #6887B0;
-  color: #fff;  // default text color becomes white
+  color: #fff; /* default text color becomes white */
+  padding: 40px 0; /* reduce section height */
 }
+
 #services h2,
 #services h3 {
-  color: #fff;  // keep titles white
+  color: #fff; /* keep titles white */
 }
 
 #services p {
-  color: rgba(255, 255, 255, 0.85);  // softer white for body text
+  color: rgba(255, 255, 255, 0.85); /* softer white for body text */
 }
-#services {
-  padding: 40px 0;   // reduce section height
+
+#services .service-box {
+  text-align: left;   /* align everything left */
+  margin: 20px auto;
+  max-width: 600px;   /* keep text from stretching too wide */
 }
+
 #services .service-box i {
   display: block;
   margin-bottom: 20px;
   font-size: 3.5rem;   /* adjust size */
   color: #f58663;      /* your orange */
-}
-
-.service-box {
-  text-align: left;   // align everything left
-  margin: 20px auto;
-  max-width: 600px;   // keep text from stretching too wide
-}
-
-.service-box i {
-  display: block;
-  margin-bottom: 15px;
-  color: #f58663; // brand orange (optional)
 }
 
 .service-item {
   margin-bottom: 40px;
 }
-#services .service-box i {
-  display: block;
-  margin-bottom: 20px;
-  font-size: 3.5rem;   /* adjust size */
-  color: #f58663;      /* your orange */
-}
 
-/* ========================================================================== Portfolio SECTION CUSTOM ========================================================================== */
-
+/* ========================================================================== PORTFOLIO SECTION CUSTOM ========================================================================== */
 #portfolio {
   background-color: #5D799E; /* same dark blue */
   padding: 60px 0;
 }
 
-/* Remove container padding for portfolio */
 #portfolio .container-fluid {
   padding-left: 0;
   padding-right: 0;
+  overflow: hidden;
 }
 
-/* Tighten rows */
-#portfolio .row {
+/* Tighten rows only for portfolio */
+#portfolio .row.no-gutter {
   margin-left: -5px;
   margin-right: -5px;
 }
 
-/* Columns */
-#portfolio .col-lg-6, 
-#portfolio .col-sm-6 {
+#portfolio .row.no-gutter > [class*='col-'] {
   padding-left: 5px;
   padding-right: 5px;
-  margin-bottom: 10px; // vertical gap
+  margin-bottom: 10px;
 }
 
 #portfolio .section-heading {
@@ -288,61 +268,43 @@ header {
 #portfolio hr.primary {
   border-color: white;
 }
-/* Portfolio specific fix */
-#portfolio .container-fluid {
-  padding-left: 0;
-  padding-right: 0;
-  overflow: hidden;
-}
-/*Fix Bootstrap row gutter issue */
-#portfolio .row.no-gutter {
-  margin-left: -5px;
-  margin-right: -5px;
-}
-#portfolio .row.no-gutter > [class*='col-'] {
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-bottom: 10px;
-}
 
 .portfolio-box-caption-content {
   position: absolute;
   top: 20px;   /* move higher */
   left: 20px;
   right: 20px;
-  text-align: left; /* or center if you prefer */
+  text-align: left;
 }
+
 .project-category {
-  font-size: 24px;      // larger than project-name
-  font-weight: 700;     // bold
-  text-align: center;     // left align
-  margin-bottom: 15px;   // add spacing before project-name
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .project-name {
-  font-size: 15px;      // smaller details
-  font-weight: normal;  // reset
+  font-size: 15px;
+  font-weight: normal;
   line-height: 1.6;
   text-align: left;
 }
 
 .project-name b {
-  font-weight: 600;     // bold specific words only
+  font-weight: 600;
 }
-
 .project-name u {
   text-decoration: underline;
 }
+
 .portfolio-box-caption {
-  background: rgba(245, 134, 99, 0.85) !important;  // darker orange, 85% opacity
+  background: rgba(245, 134, 99, 0.85) !important; /* darker orange */
 }
 
-
-
 /* ========================================================================== TEAM SECTION CUSTOM ========================================================================== */
-
 .bg-darkblue {
-  background-color: #7092BE; // same as services section blue
+  background-color: #7092BE; /* same as services section blue */
   padding: 80px 0;
   color: #fff;
 }
@@ -351,6 +313,7 @@ header {
   margin-bottom: 40px;
   font-weight: 700;
 }
+
 #team h3 {
   display: flex;
   align-items: center;
@@ -359,10 +322,10 @@ header {
 
 #team .btn-link {
   padding: 0;
-  margin-left: 10px;       // spacing from text
+  margin-left: 10px;
   color: white;
-  vertical-align: middle;  // aligns button to text baseline
-  transform: translateY(2px); // nudge downward a bit
+  vertical-align: middle;
+  transform: translateY(2px); /* nudge downward a bit */
 }
 
 #team .collapse p {
@@ -374,78 +337,80 @@ header {
 
 #team .row {
   display: flex;
-  align-items: flex-start;   // aligns photo and text at top
+  align-items: flex-start;
 }
 
 #team img {
-  max-width: 250px;   // smaller than 250px
-  margin-top: 20px;   // keep slight downward push
-  margin-left: -50px; // move photo left by 50px
+  max-width: 250px;
+  margin-top: 20px;
+  margin-left: -50px;
 }
 
 .name-line {
   border: 0;
-  border-top: 2px solid #fff;  /* white line */
-  margin-top: 4px;             /* closer to the name */
-  width: 100%;                 /* span full width of col-md-8 */
+  border-top: 2px solid #fff;
+  margin-top: 4px;
+  width: 100%;
 }
 
 .name-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 2px solid white;   // line goes across
-  padding-bottom: 5px;              // some spacing
-  margin-bottom: 20px;              // spacing before bio text
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
 }
 
-/* ========================================================================== Contact Styles ========================================================================== */
+/* ========================================================================== CONTACT SECTION CUSTOM ========================================================================== */
+.contact-section {
+  position: relative;
+  background: #f58663; /* base orange */
+  padding: 30px 0;
+}
+
+.contact-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* darken effect */
+  z-index: 1;
+}
+
+.contact-section .container {
+  position: relative;
+  z-index: 2;
+}
 
 #contact .section-heading {
   color: white !important;
   font-weight: 700;
 }
-.contact-section {
-  position: relative;
-  background: #f58663; /* base orange */
-  padding: 30px 0;
 
-  /* overlay layer for darker effect */
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0, 0, 0, 0.3); /* darken effect */
-    z-index: 1;
-  }
-}              
-  .container {
-    position: relative;
-    z-index: 2; /* keep content above overlay */
-  }
-
-  .contact-info {
-    margin-top: 30px;
-
-    i {
-      margin-bottom: 10px;
-      color: #fff;
-    }
-
-    p, .contact-email {
-      margin: 0;
-      font-size: 16px;
-      line-height: 1.6;
-      color: #fff;
-    }
+.contact-info {
+  margin-top: 30px;
 }
-    .contact-email {
-      text-decoration: none;
-    }
-    .contact-email:hover {
-      text-decoration: underline;
-    }
-  
+
+.contact-info i {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.contact-info p,
+.contact-info .contact-email {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.contact-email {
+  text-decoration: none;
+}
+.contact-email:hover {
+  text-decoration: underline;
+}
+
 
 
