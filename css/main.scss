@@ -42,6 +42,12 @@ $theme-dark: #222;
         "mixins",
         "base"
 ;
+
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* prevent horizontal scrolling */
+}
+
 /* ============================================================== Custom Navbar Styles ================================================================= */
 .navbar-custom {
   background: linear-gradient(to right, #8faad2, #7092BE); // lighter left → target blue right
@@ -236,6 +242,7 @@ header {
   margin-bottom: 40px;
 }
 
+
 /* ========================================================================== Portfolio SECTION CUSTOM ========================================================================== */
 
 #portfolio {
@@ -273,7 +280,12 @@ header {
   padding: 0 !important;
   margin: 0 !important;
 }
-
+/* Portfolio specific fix */
+#portfolio .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  overflow: hidden;
+}
 .portfolio-box-caption-content {
   position: absolute;
   top: 20px;   /* move higher */
@@ -306,6 +318,23 @@ header {
   background: rgba(245, 134, 99, 0.85) !important;  // darker orange, 85% opacity
 }
 
+/* Prevent images from overflowing */
+.img-responsive,
+.portfolio-box img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Fix Bootstrap row gutter issue */
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+.row.no-gutter > [class*='col-'] {
+  padding-left: 0;
+  padding-right: 0;
+}
 /* ========================================================================== TEAM SECTION CUSTOM ========================================================================== */
 
 .bg-darkblue {
