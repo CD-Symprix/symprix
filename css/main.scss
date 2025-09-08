@@ -286,6 +286,18 @@ header {
   padding-right: 0;
   overflow: hidden;
 }
+/*Fix Bootstrap row gutter issue */
+#portfolio .row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#portfolio .row.no-gutter > [class*='col-'] {
+  padding-left: 5px;   /* small gap between images */
+  padding-right: 5px;
+  margin-bottom: 10px; /* vertical spacing */
+}
+
 .portfolio-box-caption-content {
   position: absolute;
   top: 20px;   /* move higher */
@@ -318,7 +330,7 @@ header {
   background: rgba(245, 134, 99, 0.85) !important;  // darker orange, 85% opacity
 }
 
-/* Prevent images from overflowing */
+/* Prevent images from overflowing 
 .img-responsive,
 .portfolio-box img {
   max-width: 100%;
@@ -326,7 +338,7 @@ header {
   display: block;
 }
 
-/* Fix Bootstrap row gutter issue */
+Fix Bootstrap row gutter issue 
 .row.no-gutter {
   margin-left: 0;
   margin-right: 0;
@@ -335,6 +347,8 @@ header {
   padding-left: 0;
   padding-right: 0;
 }
+*/
+
 /* ========================================================================== TEAM SECTION CUSTOM ========================================================================== */
 
 .bg-darkblue {
