@@ -78,6 +78,26 @@ $theme-dark: #222;
   margin-right: 40px;
 }
 
+/* Make mobile nav align right */
+@media (max-width: 767px) {
+  .navbar-collapse {
+    text-align: right; /* align menu items to right */
+    background-color: rgba(0, 0, 0, 0.8); /* dark transparent background */
+    padding: 15px;
+  }
+
+  .navbar-collapse .nav > li > a {
+    color: #fff !important; /* force white text */
+    font-size: 16px; 
+    padding: 10px 0;
+    display: block;
+  }
+
+  .navbar-collapse .nav > li > a:hover {
+    color: #f58663 !important; /* your accent orange */
+  }
+}
+
 /* =========================================================================== HEADER SECTION ========================================================================== */
 .brand-highlight {
   font-weight: 700;
