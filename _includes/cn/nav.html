@@ -30,19 +30,17 @@
                 <li>
                     <a class="page-scroll" href="#contact">联系我们</a>
                 </li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                     aria-expanded="false">
-                    <i class="fa fa-globe"></i> 语言 <span class="caret"></span>
+                <li class="dropdown hidden-xs">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                     aria-haspopup="true" aria-expanded="false">
+                    <i class="fa-solid fa-earth-asia"></i> 语言 <span class="caret"></span>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a href="/">English</a></li>
-                    <li><a href="/cn/">中文</a></li>
+                    <li><a href="{{ '/'   | relative_url }}">English</a></li>
+                    <li><a href="{{ '/cn/'| relative_url }}">中文</a></li>
                   </ul>
                 </li>
-                <!-- Mobile: simple links (no dropdown = most reliable) -->
-                <li class="visible-xs-block"><a href="{{ '/'   | relative_url }}">English</a></li>
-                <li class="visible-xs-block"><a href="{{ '/cn/'| relative_url }}">中文</a></li>                
+            
             </ul>
         </div>
         <!-- /.navbar-collapse -->
