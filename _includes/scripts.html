@@ -11,3 +11,10 @@
 
 <!-- Custom Theme JavaScript -->
 <script src="{{ '/js/creative.js' | relative_url }}"></script>
+
+<script>
+  // Ensure dropdown link click works inside collapsed navbar (mobile)
+  $(document).on('click', '.navbar-collapse.in .dropdown-menu a', function (e) {
+    e.stopPropagation(); // keep dropdown open long enough to follow link
+  });
+</script>
