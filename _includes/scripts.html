@@ -4,6 +4,15 @@
 <!-- Bootstrap Core JavaScript -->
 <script src="{{ '/js/bootstrap.min.js' | relative_url }}"></script>
 
+<script>
+  // Fix: keep dropdown open inside collapsed mobile navbar
+  $(document).on('click', '.navbar-collapse.in .dropdown-toggle', function (e) {
+    e.stopPropagation();
+    e.preventDefault();
+    $(this).parent().toggleClass('open');
+  });
+</script>
+
 <!-- Plugin JavaScript -->
 <script src="{{ '/js/jquery.easing.min.js' | relative_url }}"></script>
 <script src="{{ '/js/jquery.fittext.js' | relative_url }}"></script>
@@ -12,9 +21,4 @@
 <!-- Custom Theme JavaScript -->
 <script src="{{ '/js/creative.js' | relative_url }}"></script>
 
-<script>
-  // Ensure dropdown link click works inside collapsed navbar (mobile)
-  $(document).on('click', '.navbar-collapse.in .dropdown-menu a', function (e) {
-    e.stopPropagation(); // keep dropdown open long enough to follow link
-  });
-</script>
+
