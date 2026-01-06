@@ -21,4 +21,31 @@
 <!-- Custom Theme JavaScript -->
 <script src="{{ '/js/creative.js' | relative_url }}"></script>
 
+<script>
+  (function () {
+    const boxes = document.querySelectorAll('#portfolio .portfolio-box');
+    if (!boxes.length) return;
+
+    const first = boxes[0];
+    const grid = document.querySelector('#portfolio');
+
+    // Default: first tile active
+    boxes.forEach(b => b.classList.remove('is-active'));
+    first.classList.add('is-active');
+
+    // Hover behaviour
+    boxes.forEach(box => {
+      box.addEventListener('mouseenter', () => {
+        boxes.forEach(b => b.classList.remove('is-active'));
+        box.classList.add('is-active');
+      });
+    });
+
+    // Restore default when leaving the section
+    grid.addEventListener('mouseleave', () => {
+      boxes.forEach(b => b.classList.remove('is-active'));
+      first.classList.add('is-active');
+    });
+  })();
+</script>
 
