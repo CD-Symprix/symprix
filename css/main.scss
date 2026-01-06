@@ -304,6 +304,10 @@ header {
   background: rgba(245, 134, 99, 0.85) !important; /* darker orange */
 }
 
+/* Show caption by default when a tile is "active" */
+.portfolio-box.is-active .portfolio-box-caption {
+  opacity: 1;
+}
 
 /* ========================================================================== TEAM SECTION CUSTOM ========================================================================== */
 .bg-darkblue {
