@@ -1,56 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- include your head here -->
-  <body id="page-top">
-    <!-- include nav here -->
 
-    <header class="masthead" style="min-height:40vh;">
-      <div class="hero-wrapper">
-        <div class="hero-content">
-          <h1 class="hero-title"><span class="brand-highlight">Projects</span></h1>
-          <p class="text-muted" style="max-width:900px;margin:15px auto 0;">
-            A selection of Symprix and prior-delivered engagements across rail reform, investment advisory,
-            demand modelling, and bids.
+<!-- Paste your existing head here (from head.html) -->
+<!-- If your site uses includes, replace this block with your include -->
+<!-- e.g., {% include head.html %} -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Symprix | Projects</title>
+  <link rel="icon" type="image/png" href="img/Icon.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+  <link rel="stylesheet" href="css/main.css?v=3" type="text/css">
+</head>
+
+<body id="page-top">
+
+  <!-- Paste your existing nav here (from nav.html), but update links as shown in Step 3 -->
+  <!-- If your site uses includes, replace this block with your include -->
+  <!-- e.g., {% include nav.html %} -->
+
+  <header class="masthead" style="min-height:45vh;">
+    <div class="header-content">
+      <div class="header-content-inner">
+        <h1><b>Projects</b></h1>
+        <hr>
+        <p>
+          A curated selection of engagements across rail reform, investment advisory, demand & appraisal,
+          and bid / commercial support.
+        </p>
+
+        <!-- Jump links -->
+        <p style="margin-top:20px;">
+          <a class="btn btn-default btn-sm" href="#symprix-delivered">Symprix-delivered</a>
+          <a class="btn btn-default btn-sm" href="#strategy">Strategy & Policy</a>
+          <a class="btn btn-default btn-sm" href="#investment">Investment & Infrastructure</a>
+          <a class="btn btn-default btn-sm" href="#innovation">Innovation & Research</a>
+          <a class="btn btn-default btn-sm" href="#bid">Bid & Commercial</a>
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Featured / Symprix delivered -->
+  <section id="symprix-delivered">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          <h2 class="section-heading"><b>Featured — delivered by Symprix</b></h2>
+          <hr class="primary">
+          <p class="text-muted">
+            These are engagements delivered under the Symprix brand (2–3 items is totally fine — it reads as “recent highlights”).
           </p>
-        </div>
-      </div>
-    </header>
 
-    <section id="projects-list">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <h2 class="section-heading"><b>Project profiles</b></h2>
-            <hr class="primary">
-          </div>
-        </div>
+          <div class="panel-group" id="accordion-featured" role="tablist" aria-multiselectable="true">
 
-        <div class="row" style="margin-top:20px;">
-          <div class="col-md-6">
             <div class="panel panel-default">
-              <div class="panel-body">
-                <h4 style="margin-top:0;">Rail reform – policy & contract design</h4>
-                <p class="text-muted">Policy, incentives, and market design for rail reform programmes.</p>
-                <a class="btn btn-info btn-sm" href="projects/rail-reform.html">View details</a>
+              <div class="panel-heading" role="tab" id="feat1">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion-featured" href="#feat1body" aria-expanded="true">
+                    [Symprix Project #1 Title] <span class="text-muted">— [Client / Confidential], [Year]</span>
+                  </a>
+                </h4>
+              </div>
+              <div id="feat1body" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="feat1">
+                <div class="panel-body">
+                  <ul>
+                    <li>[What Symprix did — bullet 1]</li>
+                    <li>[What Symprix did — bullet 2]</li>
+                    <li>[Outcome — bullet 1]</li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-md-6">
             <div class="panel panel-default">
-              <div class="panel-body">
-                <h4 style="margin-top:0;">Rail Baltica – private investment market sounding</h4>
-                <p class="text-muted">PPP packaging, investor engagement, and procurement strategy.</p>
-                <a class="btn btn-info btn-sm" href="projects/rail-baltica-market-sounding.html">View details</a>
+              <div class="panel-heading" role="tab" id="feat2">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-featured" href="#feat2body" aria-expanded="false">
+                    [Symprix Project #2 Title] <span class="text-muted">— [Client / Confidential], [Year]</span>
+                  </a>
+                </h4>
+              </div>
+              <div id="feat2body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="feat2">
+                <div class="panel-body">
+                  <ul>
+                    <li>[What Symprix did — bullet 1]</li>
+                    <li>[What Symprix did — bullet 2]</li>
+                    <li>[Outcome — bullet 1]</li>
+                  </ul>
+                </div>
               </div>
             </div>
+
+            <!-- Optional third featured item -->
           </div>
 
-          <!-- Add more cards as you create pages -->
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- include your scripts here -->
-  </body>
+  <!-- Selected experience / grouped areas -->
+  <section id="all-projects" style="padding-top:20px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          <h2 class="section-heading"><b>Selected experience</b></h2>
+          <hr class="primary">
+          <p class="text-muted">
+            Delivered in prior roles and with partner teams. (We can later re-label items as Symprix-delivered as your portfolio grows.)
+          </p>
+
+          <h3 id="strategy" style="margin-top:35px;"><b>Strategy & Policy</b></h3>
+          <div class="panel-group" id="accordion-strategy" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="s1">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion-strategy" href="#s1body" aria-expanded="false" class="collapsed">
+                    Rail Reform — Policy & Contract Design <span class="text-muted"> (DfT, UK)</span>
+                  </a>
+                </h4>
+              </div>
+              <div id="s1body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="s1">
+                <div class="panel-body">
+                  <ul>
+                    <li>Policy analysis and options development for reform programmes</li>
+                    <li>Commercial / contractual frameworks (incentives, obligations, performance regimes)</li>
+                    <li>Evidence synthesis and stakeholder-facing outputs</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Add more Strategy items here -->
+          </div>
+
+          <h3 id="investment" style="margin-top:35px;"><b>Investment & Infrastructure</b></h3>
+          <div class="panel-group" id="accordion-investment" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="i1">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion-investment" href="#i1body" aria-expanded="false" class="collapsed">
+                    Rail Baltica — Private Investment Market Sounding <span class="text-muted"> (Rail Baltica, Latvia)</span>
+                  </a>
+                </h4>
+              </div>
+              <div id="i1body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="i1">
+                <div class="panel-body">
+                  <ul>
+                    <li>Investor engagement and synthesis of market feedback</li>
+                    <li>Packaging and procurement considerations for PPP / private finance</li>
+                    <li>Risk allocation, interface risks, and availability-based approaches</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Add more Investment items here -->
+          </div>
+
+          <h3 id="innovation" style="margin-top:35px;"><b>Innovation & Research</b></h3>
+          <div class="panel-group" id="accordion-innovation" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="n1">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion-innovation" href="#n1body" aria-expanded="false" class="collapsed">
+                    Rolling Stock Attributes — Demand Impact Evaluation <span class="text-muted"> (RDG, UK)</span>
+                  </a>
+                </h4>
+              </div>
+              <div id="n1body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="n1">
+                <div class="panel-body">
+                  <ul>
+                    <li>Econometric modelling of demand impacts of rolling stock attributes</li>
+                    <li>Data design choices, sampling strategies, and sensitivity testing</li>
+                    <li>Clear reporting of results and limitations for decision-making</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Add more Innovation items here -->
+          </div>
+
+          <h3 id="bid" style="margin-top:35px;"><b>Bid & Commercial Support</b></h3>
+          <div class="panel-group" id="accordion-bid" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="b1">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion-bid" href="#b1body" aria-expanded="false" class="collapsed">
+                    Dubai Al Maktoum International Airport — APM Bid Support <span class="text-muted"> (Hitachi, Dubai)</span>
+                  </a>
+                </h4>
+              </div>
+              <div id="b1body" class="panel-collapse collapse" role="tabpanel" aria-labelledby="b1">
+                <div class="panel-body">
+                  <ul>
+                    <li>Technical and commercial bid inputs; evidence-based case studies</li>
+                    <li>Quality narrative development and review against requirements</li>
+                    <li>Internal coordination to tighten and de-risk submissions</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Add more Bid items here -->
+          </div>
+
+          <div class="text-center" style="margin-top:35px;">
+            <a class="btn btn-info btn-xl" href="index.html#contact">Talk to us</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Paste your existing scripts here (from scripts.html) -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/jquery.fittext.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/creative.js"></script>
+
+</body>
 </html>
