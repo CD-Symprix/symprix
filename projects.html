@@ -17,9 +17,21 @@
 
   <style>
     /* Fix: prevent hero from hiding fixed navbar */
-    body.subpage { padding-top: 100px; }
+    body.subpage { padding-top: 0; }  /* no more blank strip */
+
+    /* Push hero down exactly by navbar height */
+    body.subpage header.masthead {
+      margin-top: 100px;
+    }
+    
+    @media (min-width: 768px) {
+      body.subpage header.masthead {
+        margin-top: 120px;
+      }
+    }
+    
+    /* Keep navbar above overlays */
     #mainNav { z-index: 2000; }
-    @media (min-width: 768px) { body.subpage { padding-top: 120px; } }
   </style>
 </head>
 
