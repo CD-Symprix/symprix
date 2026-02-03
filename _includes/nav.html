@@ -8,48 +8,61 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <!-- Replace brand text with logo -->
-            <div class="navbar-brand page-scroll" href="#page-top">
+
+            <!-- Brand logo (clickable, always goes to main page) -->
+            <a class="navbar-brand" href="{{ '/' | relative_url }}">
                 <img src="{{ '/img/logo.png' | relative_url }}" alt="Symprix Logo" height="90">
-            </div>
+            </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
+
+                <!-- Home: explicit link back to main page -->
                 <li>
-                    <a class="page-scroll" href="#about">About</a>
+                    <a href="{{ '/' | relative_url }}">Home</a>
+                </li>
+
+                <!-- One-page sections (must point to index.html anchors) -->
+                <li>
+                    <a class="page-scroll" href="{{ '/' | relative_url }}#about">About</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#services">Services</a>
+                    <a class="page-scroll" href="{{ '/' | relative_url }}#services">Services</a>
                 </li>
+
+                <!-- Projects: real page -->
                 <li>
-                      <a href="projects.html">Projects</a>
+                    <a href="{{ '/projects.html' | relative_url }}">Projects</a>
                 </li>
 
                 <li>
-                    <!-- Just change label from Portfolio → Team, keep the link -->
-                    <a class="page-scroll" href="#team">Team</a>
+                    <a class="page-scroll" href="{{ '/' | relative_url }}#team">Team</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
+                    <a class="page-scroll" href="{{ '/' | relative_url }}#contact">Contact</a>
                 </li>
-                
-                <!-- Desktop: dropdown -->
+
+                <!-- Desktop: language dropdown -->
                 <li class="dropdown hidden-xs">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    <i class="fa-solid fa-earth-asia"></i> Language <span class="caret"></span>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a href="{{ '/'   | relative_url }}">English</a></li>
-                    <li><a href="{{ '/cn/'| relative_url }}">中文</a></li>
-                  </ul>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa-solid fa-earth-asia"></i> Language <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ '/' | relative_url }}">English</a></li>
+                        <li><a href="{{ '/cn/' | relative_url }}">中文</a></li>
+                    </ul>
                 </li>
-                
-                <!-- Mobile: simple links -->
-                <li class="visible-xs-block"><a href="{{ '/'   | relative_url }}">English</a></li>
-                <li class="visible-xs-block"><a href="{{ '/cn/'| relative_url }}">中文</a></li>
-                            
+
+                <!-- Mobile: simple language links -->
+                <li class="visible-xs-block">
+                    <a href="{{ '/' | relative_url }}">English</a>
+                </li>
+                <li class="visible-xs-block">
+                    <a href="{{ '/cn/' | relative_url }}">中文</a>
+                </li>
+
             </ul>
         </div>
         <!-- /.navbar-collapse -->
