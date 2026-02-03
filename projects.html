@@ -14,25 +14,19 @@
   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="/css/animate.min.css" type="text/css">
   <link rel="stylesheet" href="/css/main.css?v=3" type="text/css">
+<style>
+  /* Remove body padding that caused the gap */
+  body.subpage {
+    padding-top: 0;
+  }
 
-  <style>
-    /* Fix: prevent hero from hiding fixed navbar */
-    body.subpage { padding-top: 0; }  /* no more blank strip */
+  /* Ensure navbar is above hero */
+  #mainNav {
+    z-index: 2000;
+  }
+</style>
 
-    /* Push hero down exactly by navbar height */
-    body.subpage header.masthead {
-      margin-top: 100px;
-    }
-    
-    @media (min-width: 768px) {
-      body.subpage header.masthead {
-        margin-top: 120px;
-      }
-    }
-    
-    /* Keep navbar above overlays */
-    #mainNav { z-index: 2000; }
-  </style>
+
 </head>
 
 <body id="page-top" class="subpage">
@@ -279,6 +273,19 @@
   <script src="js/jquery.fittext.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/creative.js"></script>
+  <script>
+  (function () {
+    function offsetHeroBelowNav() {
+      var nav = document.getElementById('mainNav');
+      var hero = document.querySelector('header.masthead');
+      if (!nav || !hero) return;
+      hero.style.marginTop = nav.offsetHeight + 'px';
+    }
+
+    window.addEventListener('load', offsetHeroBelowNav);
+    window.addEventListener('resize', offsetHeroBelowNav);
+  })();
+</script>
 
 </body>
 </html>
