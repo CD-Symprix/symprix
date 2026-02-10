@@ -14,17 +14,71 @@
   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="/css/animate.min.css" type="text/css">
   <link rel="stylesheet" href="/css/main.css?v=3" type="text/css">
-<style>
-  /* Remove body padding that caused the gap */
-  body.subpage {
-    padding-top: 0;
+  <style>
+    /* Remove body padding that caused the gap */
+    body.subpage {
+      padding-top: 0;
+    }
+  
+    /* Ensure navbar is above hero */
+    #mainNav {
+      z-index: 2000;
+    }
+  /* Category tiles (Arup-style) */
+  .category-grid {
+    margin-top: 25px;
   }
-
-  /* Ensure navbar is above hero */
-  #mainNav {
-    z-index: 2000;
+  
+  .category-card {
+    display: block;
+    text-decoration: none !important;
+    color: inherit;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.10);
+    transition: transform .15s ease, box-shadow .15s ease;
   }
-</style>
+  
+  .category-card:hover,
+  .category-card:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 34px rgba(0,0,0,0.14);
+  }
+  
+  .category-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .category-card .category-body {
+    padding: 14px 16px 16px;
+  }
+  
+  .category-card .category-title {
+    margin: 0;
+    font-family: "Merriweather", "Open Sans", Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.15;
+    font-size: 22px;
+  }
+  
+  .category-card .category-hint {
+    margin-top: 8px;
+    color: #777;
+    font-size: 13px;
+  }
+  
+  /* Smaller on mobile */
+  @media (max-width: 767px) {
+    .category-card img { height: 140px; }
+    .category-card .category-title { font-size: 20px; }
+  }
+  
+    
+  </style>
 
 
 </head>
@@ -81,12 +135,51 @@
       <h1><b>Projects</b></h1>
       <hr>
 
-      <p style="margin-top:20px;">
-        <a class="btn btn-default btn-sm" href="#strategy">Strategy & Policy</a>
-        <a class="btn btn-default btn-sm" href="#investment">Investment & Infrastructure</a>
-        <a class="btn btn-default btn-sm" href="#innovation">Innovation & Research</a>
-        <a class="btn btn-default btn-sm" href="#bid">Bid & Commercial</a>
-      </p>
+    <div class="category-grid">
+      <div class="row">
+    
+        <div class="col-sm-6 col-md-3" style="margin-bottom:18px;">
+          <a class="category-card" href="#strategy">
+            <img src="/img/portfolio/1.jpg" alt="Strategy & Policy">
+            <div class="category-body">
+              <h3 class="category-title">Strategy &amp; Policy</h3>
+              <div class="category-hint">Explore projects →</div>
+            </div>
+          </a>
+        </div>
+    
+        <div class="col-sm-6 col-md-3" style="margin-bottom:18px;">
+          <a class="category-card" href="#investment">
+            <img src="/img/portfolio/2.jpg" alt="Investment & Infrastructure">
+            <div class="category-body">
+              <h3 class="category-title">Investment &amp; Infrastructure</h3>
+              <div class="category-hint">Explore projects →</div>
+            </div>
+          </a>
+        </div>
+    
+        <div class="col-sm-6 col-md-3" style="margin-bottom:18px;">
+          <a class="category-card" href="#innovation">
+            <img src="/img/portfolio/3.jpg" alt="Innovation & Research">
+            <div class="category-body">
+              <h3 class="category-title">Innovation &amp; Research</h3>
+              <div class="category-hint">Explore projects →</div>
+            </div>
+          </a>
+        </div>
+    
+        <div class="col-sm-6 col-md-3" style="margin-bottom:18px;">
+          <a class="category-card" href="#bid">
+            <img src="/img/portfolio/4.jpg" alt="Bid & Commercial">
+            <div class="category-body">
+              <h3 class="category-title">Bid &amp; Commercial</h3>
+              <div class="category-hint">Explore projects →</div>
+            </div>
+          </a>
+        </div>
+    
+      </div>
+    </div>
     </div>
   </div>
 </header>
@@ -284,6 +377,28 @@
 
     window.addEventListener('load', offsetHeroBelowNav);
     window.addEventListener('resize', offsetHeroBelowNav);
+  })();
+</script>
+<script>
+  (function () {
+    function smoothAnchor(e) {
+      var href = this.getAttribute('href');
+      if (!href || href.charAt(0) !== '#') return;
+      var target = document.querySelector(href);
+      if (!target) return;
+
+      e.preventDefault();
+      var nav = document.getElementById('mainNav');
+      var offset = nav ? nav.offsetHeight : 0;
+      var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+
+      window.scrollTo({ top: top, behavior: 'smooth' });
+    }
+
+    var links = document.querySelectorAll('a[href^="#"]');
+    for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener('click', smoothAnchor);
+    }
   })();
 </script>
 
