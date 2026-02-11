@@ -136,20 +136,23 @@
     header.masthead.projects-hero {
       min-height: 0 !important;           /* override template vh/min-height logic */
       padding-top: 140px !important;
-      padding-bottom: 60px !important;    /* start here */
+      padding-bottom: 140px !important;    /* start here */
     }
 
-    /* FIX: cards are inside hero, so don't inherit white hero text */
-    header.masthead.projects-hero .category-card,
-    header.masthead.projects-hero .category-card * {
+    /* Set base readable colour */
+    header.masthead.projects-hero .category-card {
       color: #222 !important;
     }
     
-    /* Keep hint muted */
-    header.masthead.projects-hero .category-hint {
-      color: #777 !important;
+    /* Brand orange for titles */
+    header.masthead.projects-hero .category-card .category-title {
+      color: #f05f40 !important;   /* your template orange */
     }
-
+    
+    /* Slightly deeper orange for hint */
+    header.masthead.projects-hero .category-card .category-hint {
+      color: #d94e2f !important;
+    }
   </style>
 
 
