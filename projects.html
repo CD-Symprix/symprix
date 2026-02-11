@@ -80,8 +80,8 @@
     
     /* Make blue hero section taller */
     header.masthead {
-      padding-top: 160px;      /* space above title */
-      padding-bottom: 260px;   /* extend blue background below cards */
+      padding-top: 180px;      /* space above title */
+      padding-bottom: 240px;   /* extend blue background below cards */
     }
         
     /* If your cards sit inside a wrapper, also ensure it has spacing */
@@ -128,10 +128,9 @@
       transform: none !important;
     }
     
-    /* Disable any hover hide effects */
-    .category-card:hover .category-body,
-    .category-card:hover .category-title,
-    .category-card:hover .category-hint {
+    /* If theme hides text until hover, kill that behaviour */
+    header.masthead .category-grid--always .category-card .category-body,
+    header.masthead .category-grid--always .category-card:hover .category-body {
       opacity: 1 !important;
     }
 
@@ -193,7 +192,7 @@
         <h1><b>Projects</b></h1>
         <hr>
   
-      <div class="category-grid">
+      <div class="category-grid category-grid--always">
         <div class="row">
       
           <div class="col-sm-6 col-md-3" style="margin-bottom:18px;">
