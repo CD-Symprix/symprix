@@ -77,11 +77,13 @@
       .category-card .category-title { font-size: 20px; }
     } 
 
-    /* Give the hero/header extra bottom space so the blue background covers the cards */
-    header.masthead {
-      padding-bottom: 180px !important;  /* increase if needed */
-    }
     
+    /* Make blue hero section taller */
+    header.masthead {
+      padding-top: 160px;      /* space above title */
+      padding-bottom: 260px;   /* extend blue background below cards */
+    }
+        
     /* If your cards sit inside a wrapper, also ensure it has spacing */
     .category-grid {
       padding-bottom: 40px;
@@ -117,10 +119,22 @@
        ENSURE TEXT IS ALWAYS VISIBLE
     -------------------------- */
     
-    .category-card .category-body {
+    /* Force category text to always show */
+    .category-card .category-body,
+    .category-card .category-title,
+    .category-card .category-hint {
       opacity: 1 !important;
       visibility: visible !important;
+      transform: none !important;
     }
+    
+    /* Disable any hover hide effects */
+    .category-card:hover .category-body,
+    .category-card:hover .category-title,
+    .category-card:hover .category-hint {
+      opacity: 1 !important;
+    }
+
 
   </style>
 
@@ -186,7 +200,7 @@
             <a class="category-card" href="#strategy">
               <img src="/img/portfolio/A1.png" alt="Strategy & Policy">
               <div class="category-body">
-                <h3 class="category-title">Strategy &amp; Policy      </h3>
+                <h3 class="category-title">Strategy &amp; Policy</h3>
                 <div class="category-hint">Explore projects →</div>
               </div>
             </a>
