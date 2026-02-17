@@ -500,4 +500,66 @@ header {
 }
 
 
+/* ========================================================================== Featured Projects SECTION CUSTOM ========================================================================== */
 
+#symprix-delivered.featured-projects{
+  /* Option A (recommended): blue */
+  background: #6f88a8;
+
+  /* Option B: dark orange */
+  /* background: #b84a2b; */
+
+  padding: 60px 0;
+}
+
+#symprix-delivered .section-heading{ color: #fff; }
+#symprix-delivered .featured-subtitle{ color: rgba(255,255,255,.85); margin: 0 0 25px; }
+#symprix-delivered hr.primary{ border-color: rgba(255,255,255,.85); }
+
+/* Card */
+#symprix-delivered .fp-card{
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(0,0,0,.12);
+  margin: 15px 0;
+}
+
+/* Image area */
+#symprix-delivered .fp-media{
+  display: block;
+  position: relative;
+  text-decoration: none;
+}
+#symprix-delivered .fp-media img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Badge */
+#symprix-delivered .fp-badge{
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  background: rgba(0,0,0,.55);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+/* Body */
+#symprix-delivered .fp-body{ padding: 16px 18px 18px; }
+#symprix-delivered .fp-title{ margin: 0 0 10px; font-size: 18px; line-height: 1.25; }
+#symprix-delivered .fp-title a{ color: #222; text-decoration: none; }
+#symprix-delivered .fp-title a:hover{ text-decoration: underline; }
+#symprix-delivered .fp-inline-meta{ font-size: 13px; font-weight: normal; }
+
+/* Expanded content spacing */
+#symprix-delivered .fp-collapse{ padding-top: 8px; }
+#symprix-delivered .fp-collapse h4{ margin-top: 14px; }
+
+/* Make links nice inside the card body */
+#symprix-delivered .fp-body a{ color: #0d6efd; text-decoration: none; }
+#symprix-delivered .fp-body a:hover{ text-decoration: underline; }
