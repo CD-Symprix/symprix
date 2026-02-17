@@ -508,6 +508,21 @@ header {
   padding-right: 15px;
 }
 
+/* Projects hero: allow wider content than the template's 1000px cap */
+header.masthead.projects-hero {
+  .header-content-inner {
+    max-width: none;   /* remove the 1000px restriction */
+  }
+
+  /* (optional but recommended) keep your shared width here too */
+  .projects-inner {
+    max-width: 1320px; /* or 1200/1400 - your choice */
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 
 /* ========================================================================== Featured Projects SECTION CUSTOM ========================================================================== */
 
