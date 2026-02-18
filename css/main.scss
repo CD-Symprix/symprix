@@ -526,15 +526,27 @@ header.masthead.projects-hero {
 
 /* ========================================================================== Featured Projects SECTION CUSTOM ========================================================================== */
 
-#symprix-delivered.featured-projects{
-  /* Option A (recommended): blue */
-  /* background: #6f88a8; */
-
-  /* Option B: dark orange */
-   background: #b84a2b; 
-
+#symprix-delivered.featured-projects {
+  position: relative;
+  background-color: #FF8D6E;   /* same orange as homepage */
+  overflow: hidden;
   padding: 60px 0;
 }
+
+#symprix-delivered.featured-projects::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.25);  /* same 25% overlay */
+  z-index: 1;
+}
+
+/* Make sure content sits above overlay */
+#symprix-delivered.featured-projects .projects-inner {
+  position: relative;
+  z-index: 2;
+}
+
 
 #symprix-delivered .section-heading{ color: #fff; }
 #symprix-delivered .featured-subtitle{ color: rgba(255,255,255,.85); margin: 0 0 25px; }
