@@ -599,3 +599,13 @@ header.masthead.projects-hero {
 /* Make links nice inside the card body */
 #symprix-delivered .fp-body a{ color: #0d6efd; text-decoration: none; }
 #symprix-delivered .fp-body a:hover{ text-decoration: underline; }
+
+/* Make Featured project bullet text same size as paragraphs */
+#symprix-delivered .fp-collapse ul {
+  font-size: 16px;   /* match paragraph size */
+  line-height: 1.6;
+}
+
+#symprix-delivered .fp-collapse ul li {
+  margin-bottom: 8px;
+}
