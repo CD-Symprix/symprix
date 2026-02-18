@@ -609,3 +609,41 @@ header.masthead.projects-hero {
 #symprix-delivered .fp-collapse ul li {
   margin-bottom: 8px;
 }
+/* ================================================= Project Track Record - Typography Upgrade ===================================== */
+
+#all-projects .panel-body {
+  font-size: 16px;        /* increase base size */
+  line-height: 1.7;       /* improve readability */
+}
+
+#all-projects .panel-body p {
+  font-size: 17px;        /* ES sentence slightly larger */
+  margin-bottom: 10px;
+}
+
+#all-projects .panel-body ul {
+  font-size: 16px;
+  padding-left: 22px;
+}
+
+#all-projects .panel-body ul li {
+  margin-bottom: 8px;
+}
+
+#all-projects {
+  background-color: #6f88a8;   /* same as Projects hero */
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+#all-projects .section-heading {
+  color: #fff;
+}
+
+#all-projects .text-muted {
+  color: rgba(255,255,255,0.85);
+}
+
+#all-projects hr.primary {
+  border-color: rgba(255,255,255,0.8);
+}
