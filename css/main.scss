@@ -378,8 +378,9 @@ header {
 
 /* Associate Network image (rectangle, show more of the photo) */
 .associate-photo {
-  width: 340px;
-  border-radius: 12px;
+  width: 360px;
+  height: auto;
+  border-radius: 10px;
   display: block;
   margin: 0 auto;
 }
