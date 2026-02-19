@@ -369,6 +369,29 @@ header {
   margin-bottom: 20px;
 }
 
+/* Associate Network block */
+.associate-photo {
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+.associate-text {
+  margin-top: 12px;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+.associate-list {
+  margin-top: 12px;
+  padding-left: 18px;
+}
+
+.associate-list li {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+
 /* ========================================================================== CONTACT SECTION CUSTOM ========================================================================== */
 .contact-section {
   position: relative;
