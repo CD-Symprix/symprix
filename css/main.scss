@@ -377,16 +377,12 @@ header {
 
 
 /* Associate Network image (rectangle, show more of the photo) */
-#team .associate-photo {
-  width: 100%;
-  max-width: 380px;   /* adjust if you want bigger/smaller */
-  height: auto;
-  border-radius: 14px;
+.associate-photo {
+  width: 340px;
+  border-radius: 12px;
   display: block;
   margin: 0 auto;
-  border: 3px solid rgba(255,255,255,0.12);
 }
-
 
 .associate-text {
   margin-top: 12px;
